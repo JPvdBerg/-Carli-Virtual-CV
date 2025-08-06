@@ -58,14 +58,17 @@ nav a {
   text-decoration: none;
   font-weight: 600;
   padding: 0.5rem 1rem;
-  overflow: hidden;
-  transition: transform 0.2s ease;
+  border: 2px solid #c2a619;
+  border-radius: 30px;
+  transition: transform 0.2s ease, border-width 0.2s ease;
   letter-spacing: 0.5px;
 }
 
 nav a:hover {
   transform: scale(1.05);
+  border-width: 3px;
 }
+
 
 nav a::after {
   content: '';
@@ -340,3 +343,4 @@ to start as soon as possible.</p>
   </footer>
 </body>
 </html>
+
