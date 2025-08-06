@@ -6,18 +6,7 @@
   <title>Carli Hoffman - Virtual CV</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-
-a {
-  color: #2a2a2a;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-
-  /* RESET */
+/* RESET */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -59,17 +48,17 @@ nav {
   flex-wrap: wrap;
   gap: 1rem;
   padding: 1rem 2rem;
-  border-bottom: 2px solid #c2a619;
+  border-bottom: 2px solid #2a2a2a;
   z-index: 10;
 }
 
 nav a {
   position: relative;
-  color: #c2a619;
+  color: #2a2a2a;
   text-decoration: none;
   font-weight: 600;
   padding: 0.5rem 1rem;
-  border: 2px solid #c2a619;
+  border: 2px solid #2a2a2a;
   border-radius: 30px;
   transition: transform 0.2s ease, border-width 0.2s ease;
   letter-spacing: 0.5px;
@@ -80,19 +69,17 @@ nav a:hover {
   border-width: 3px;
 }
 
-
 nav a::after {
   content: '';
   position: absolute;
   left: 50%;
-  bottom: -10px; /* move it below the button border */
+  bottom: -10px;
   transform: translateX(-50%);
   height: 2px;
   width: 0;
-  background-color: #c2a619;
+  background-color: #2a2a2a;
   transition: width 0.3s ease;
 }
-
 
 nav a:hover::after {
   width: 100%;
@@ -103,13 +90,13 @@ section {
   padding: 4rem 2rem;
   max-width: 900px;
   margin: 0 auto;
-  scroll-margin-top: 100px; /* adjust this based on your nav height */
+  scroll-margin-top: 100px;
 }
 
 section h2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
-  border-left: 5px solid #c2a619;
+  border-left: 5px solid #2a2a2a;
   padding-left: 0.75rem;
   letter-spacing: 1px;
   color: #2a2a2a;
@@ -125,7 +112,7 @@ ul {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background-color: #c2a619;
+  background-color: #2a2a2a;
   color: #fff;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -151,6 +138,7 @@ ul {
 /* MAIL LINKS */
 a[href^="mailto:"] {
   display: inline-block;
+  color: #2a2a2a;
   text-decoration: none;
   transition: transform 0.2s ease;
   font-weight: 500;
@@ -160,7 +148,6 @@ a[href^="mailto:"]:hover {
   transform: scale(1.05);
 }
 
-
 /* FOOTER */
 footer {
   text-align: center;
@@ -168,8 +155,8 @@ footer {
   background-color: #eaeaea;
   color: #666;
 }
+</style>
 
-  </style>
 </head>
 <body>
   <header>
@@ -367,9 +354,3 @@ to start as soon as possible.</p>
   </footer>
 </body>
 </html>
-
-
-
-
-
-
