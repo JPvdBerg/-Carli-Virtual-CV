@@ -39,6 +39,7 @@ header {
 }
 
 /* NAVIGATION */
+/* NAVIGATION */
 nav {
   position: sticky;
   top: 0;
@@ -48,17 +49,17 @@ nav {
   flex-wrap: wrap;
   gap: 1rem;
   padding: 1rem 2rem;
-  border-bottom: 2px solid #c2a619;
+  border-bottom: 2px solid #333333;
   z-index: 10;
 }
 
 nav a {
   position: relative;
-  color: #c2a619;
+  color: #333333;
   text-decoration: none;
   font-weight: 600;
   padding: 0.5rem 1rem;
-  border: 2px solid #c2a619;
+  border: 2px solid #333333;
   border-radius: 30px;
   transition: transform 0.2s ease, border-width 0.2s ease;
   letter-spacing: 0.5px;
@@ -69,52 +70,37 @@ nav a:hover {
   border-width: 3px;
 }
 
-
 nav a::after {
   content: '';
   position: absolute;
   left: 50%;
-  bottom: -10px; /* move it below the button border */
+  bottom: -10px;
   transform: translateX(-50%);
   height: 2px;
   width: 0;
-  background-color: #c2a619;
+  background-color: #333333;
   transition: width 0.3s ease;
 }
-
 
 nav a:hover::after {
   width: 100%;
 }
 
-/* SECTION STYLES */
-section {
-  padding: 4rem 2rem;
-  max-width: 900px;
-  margin: 0 auto;
-  scroll-margin-top: 100px; /* adjust this based on your nav height */
-}
-
 section h2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
-  border-left: 5px solid #c2a619;
+  border-left: 5px solid #333333;
   padding-left: 0.75rem;
   letter-spacing: 1px;
   color: #2a2a2a;
   text-transform: uppercase;
 }
 
-ul {
-  padding-left: 2rem;
-}
-
-/* BACK TO TOP BUTTON */
 #backToTop {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background-color: #c2a619;
+  background-color: #333333;
   color: #fff;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -128,19 +114,9 @@ ul {
   z-index: 1000;
 }
 
-#backToTop:hover {
-  transform: scale(1.05);
-}
-
-#backToTop.show {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-/* MAIL LINKS */
 a[href^="mailto:"] {
   display: inline-block;
-  color: #c2a619;
+  color: #333333;
   text-decoration: none;
   transition: transform 0.2s ease;
   font-weight: 500;
@@ -149,6 +125,7 @@ a[href^="mailto:"] {
 a[href^="mailto:"]:hover {
   transform: scale(1.05);
 }
+
 
 /* FOOTER */
 footer {
@@ -356,6 +333,7 @@ to start as soon as possible.</p>
   </footer>
 </body>
 </html>
+
 
 
 
