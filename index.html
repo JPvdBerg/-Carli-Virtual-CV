@@ -73,13 +73,15 @@ nav a:hover {
 nav a::after {
   content: '';
   position: absolute;
-  left: 0;
-  bottom: 0;
+  left: 50%;
+  bottom: -6px; /* move it below the button border */
+  transform: translateX(-50%);
   height: 2px;
   width: 0;
   background-color: #c2a619;
   transition: width 0.3s ease;
 }
+
 
 nav a:hover::after {
   width: 100%;
@@ -343,4 +345,5 @@ to start as soon as possible.</p>
   </footer>
 </body>
 </html>
+
 
